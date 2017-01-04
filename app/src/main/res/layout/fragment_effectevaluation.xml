@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_theme_bg"
+    android:fillViewport="true"
+    tools:context="com.slinph.ihelmet.ihelmet_domestic.fragment.EvaluationFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/before_use"
+                    android:gravity="center"
+                    android:padding="5dp"/>
+                <TextView
+                    android:id="@+id/tv_time_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/new_img1"
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:background="@color/gray_light"
+                    android:scaleType="fitXY" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/new_img2"
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray_light"
+                    android:scaleType="fitXY" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/new_img3"
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray_light"
+                    android:scaleType="fitXY" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/new_img4"
+                    android:layout_width="130dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/gray_light"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <!--com.facebook.drawee.view.SimpleDraweeView-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#D3D5DC" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/after_use"
+                    android:gravity="center"
+                    android:padding="5dp"/>
+                <TextView
+                    android:id="@+id/tv_time_old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="130dp"
+                android:layout_height="720dp" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" " />
+
+                <TextView
+                    android:id="@+id/tv_compare1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/btn_cont"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:text="@string/contrast"/>
+
+
+                <TextView
+                    android:id="@+id/tv_compare2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/btn_cont"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:text="@string/contrast" />
+
+                <TextView
+                    android:id="@+id/tv_compare3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/btn_cont"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:text="@string/contrast" />
+
+                <TextView
+                    android:id="@+id/tv_compare4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/btn_cont"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:text="@string/contrast" />
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>

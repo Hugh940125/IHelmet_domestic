@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.ChangeUserInfoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_dark"
+        android:text="修改信息"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/et_change_realname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="输入真实姓名"
+        android:layout_marginTop="10dp"
+        android:inputType="textUri|textMultiLine"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <EditText
+        android:id="@+id/et_change_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="输入用户名"
+        android:inputType="textUri|textMultiLine"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <EditText
+        android:id="@+id/et_change_age"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="输入年龄"
+        android:layout_marginTop="10dp"
+        android:inputType="textUri|textMultiLine"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <EditText
+    android:id="@+id/et_change_gender"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/edittexth"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@mipmap/bg_input_box"
+    android:hint="输入性别"
+    android:inputType="textUri|textMultiLine"
+    android:maxLength="16"
+    android:layout_marginTop="10dp"
+    android:paddingLeft="10dp"
+    android:singleLine="true"
+    android:textAppearance="?android:textAppearanceSmall"/>
+
+    <EditText
+        android:id="@+id/et_change_nation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="输入民族"
+        android:inputType="textUri|textMultiLine"
+        android:maxLength="16"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <Button
+        android:id="@+id/btn_confirmChange"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/common_btn_radius_blue_shape"
+        android:text="确认修改"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+</LinearLayout>

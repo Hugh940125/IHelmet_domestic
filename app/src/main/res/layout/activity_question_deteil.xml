@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.QuestionDeteilActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="报告详情"
+            android:id="@+id/tv_group_name"
+            android:textSize="22sp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/btn_back_wirth"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ib_question_detail_back"/>
+    </FrameLayout>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/el_ques">
+    </ExpandableListView>
+
+</LinearLayout>

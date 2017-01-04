@@ -1,0 +1,145 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.suggest.GeneralInfoActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/global_theme_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="name"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="Please enter your name"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/font_normal"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/global_theme_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="sex"
+            android:textSize="@dimen/font_normal"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/radiobtn_selector"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:tag="Male"
+                android:text="Male"
+                android:textSize="@dimen/font_normal"/>
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/radiobtn_selector"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:tag="Female"
+                android:text="Female"
+                android:textSize="@dimen/font_normal"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/global_theme_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="age"
+            android:textSize="@dimen/font_normal"/>
+
+        <EditText
+            android:id="@+id/edit_age"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:maxLength="3"
+            android:inputType="number"
+            android:background="@null"
+            android:hint="Please enter the age"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/font_normal"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"/>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btn_next"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/common_btn_radius_blue_shape"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/white"
+        app:rd_enable="true"/>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:DeviceInfoItem="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.EquipmentInfoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/my_equipment"
+            android:id="@+id/tv_report_list"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/btn_back_wirth"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ib_deviceinfo_back"/>
+    </FrameLayout>
+
+    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dii_number"
+        DeviceInfoItem:ValueName="设备序列号"/>
+
+    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dii_hardware"
+        DeviceInfoItem:ValueName="硬件版本"/>
+
+    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dii_software"
+        DeviceInfoItem:ValueName="软件版本"/>
+
+<!--    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dii_bt_version"
+        DeviceInfoItem:ValueName="蓝牙版本"/>-->
+
+    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dii_laser"
+        DeviceInfoItem:ValueName="激光灯数量"/>
+
+    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Dii_battery"
+        DeviceInfoItem:ValueName="设备电池容量"/>
+
+</LinearLayout>

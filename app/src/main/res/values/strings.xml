@@ -1,0 +1,608 @@
+<resources>
+    <string name="app_name">新版i黑密</string>
+    <string name="open">drawer_open</string>
+    <string name="close">drawer_close</string>
+
+    <string name="home">主页</string>
+    <string name="suggest">专家建议</string>
+    <string name="light">光照</string>
+    <string name="mall">Mall</string>
+    <string name="mine">我的</string>
+    <string name="next">下一步</string>
+    <string name="scanning">扫描设备···</string>
+    <string name="double_click_exit">再按一次退出程序</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo_notice">清晰，完整的照片才能让我们的后台专家准确判断您的病情，请在白天，光线充足的情况下，由您的朋友或家人按照以下的示范图及要求为您拍照。</string>
+    <string name="top_view">顶视图</string>
+    <string name="top_view_notice">要求拍摄者站在被拍者前方，手机位于被拍者头顶正上方，取景框两侧基本被头部图像占满，前后留有空隙，要求清晰无炫光。</string>
+    <string name="hair_line_view">发际线图</string>
+    <string name="hair_line_view_notice">要求拍摄者站在被拍者前方，手机位于被拍者头顶斜上方，用手撸起被拍者前部头发，露出完整的发际线，取景框中有完整的鼻子图像，左右两侧基本被头发占满，要求清晰无炫光。</string>
+    <string name="rear_view">后视图</string>
+    <string name="rear_view_notice">要求拍摄者站在被拍者后方，手机位于被拍者头部正后方，取景框左右基本被头发占满。要求清晰无炫光。</string>
+    <string name="side_view">局部视图</string>
+    <string name="side_view_notice">根据脱发的具体情况，自由选择脱发的重点部位近距离拍照，要求清晰无炫光。</string>
+    <string name="complete_and_upload">确认上传</string>
+    <string name="remind_title">为保证疗效，默认每两天提醒一次</string>
+    <string name="chosetime">设定每次提醒的时间:</string>
+    <string name="save">保存</string>
+    <string name="hour_hint">时</string>
+    <string name="minute_hint">分</string>
+    <string name="isRemind">打开提醒功能</string>
+    <string name="treat">光照</string>
+    <string name="report">专家建议</string>
+    <string name="remind">提醒</string>
+    <string name="evaluation">效果评估</string>
+    <string name="about">我的</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="save_success">已保存</string>
+    <string name="name">姓名</string>
+    <string name="name_hint">输入真实的姓名</string>
+    <string name="sex">性别</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="age">年龄</string>
+    <string name="age_hint">输入年龄</string>
+    <string name="info_notice">*请确保填写真实的信息，便于我们更好地为您服务</string>
+    <string name="process">本月光照计划</string>
+    <string name="tital">共 次</string>
+    <string name="temperature">温度</string>
+    <string name="wet_degree">油脂度</string>
+    <string name="nopower_notice">电量不足请充电!</string>
+    <string name="lowpower_notice">电量低请在使用后充电</string>
+    <string name="discounected">未连接</string>
+    <string name="connected">已连接</string>
+    <string name="treating">正在光照</string>
+    <string name="treat_over">光照结束</string>
+    <string name="treat_pause">光照暂停</string>
+    <string name="record_plan">本月的记录</string>
+    <string name="input_tip">请输入以下信息:</string>
+    <string name="lastdevicce_connected">已连接上次的设备</string>
+    <string name="device_scanning">正在搜索设备···</string>
+    <string name="start_scan">开始搜索···</string>
+    <string name="menu">菜单</string>
+    <string name="dialog_bt">请选择头盔进行连接</string>
+    <string name="scan_again">重新搜索</string>
+    <string name="contrast">对比</string>
+    <string name="chose_device">请选择正确的设备进行连接</string>
+    <string name="reconnect">重新搜索</string>
+    <string name="connect">连接</string>
+    <string name="my_schedule">我的进度</string>
+    <string name="treatment_suggest">治疗建议</string>
+    <string name="notice">在30天后,我们会要求您做后续咨询服务并拍照上传</string>
+    <string name="my_report">我的报告</string>
+    <string name="hair_situation">您目前的脱发情况属于:</string>
+    <string name="alopecia_history">脱发病史</string>
+    <string name="changePassword">修改密码</string>
+    <string name="phone">输入手机号</string>
+    <string name="typeCaptcha">输入验证码</string>
+    <string name="typeNewPassword">输入新密码</string>
+    <string name="surePassword">确认新密码</string>
+    <string name="register">注册</string>
+    <string name="again_validate">重新获取</string>
+    <string name="sure">确认</string>
+    <string name="address_hint">重新获取</string>
+    <string name="tip">提示</string>
+    <string name="acquire_ble_service">Acquired BLE service</string>
+    <string name="connect_last_device">已连接上次的设备</string>
+    <string name="bt_open">蓝牙已打开</string>
+    <string name="not_surport_bt">此设备不支持蓝牙</string>
+    <string name="location_for_bt">允许定位才能搜索蓝牙</string>
+    <string name="side_title_treatment">光照</string>
+    <string name="side_title_report">专家建议</string>
+    <string name="side_title_remind">提醒</string>
+    <string name="side_title_evaluation">效果评估</string>
+    <string name="side_title_me">我的</string>
+    <string name="after_use">使用后</string>
+    <string name="before_use">使用前</string>
+    <string name="sure_logout">确定要退出登录吗？</string>
+    <string name="tips">提示：</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="my_equipment">我的设备</string>
+    <string name="change_psw">修改密码</string>
+    <string name="Logout">退出登录</string>
+    <string name="eqipment_authority">绑定获取专家服务</string>
+    <string name="treatment">光照</string>
+    <string name="double_press_exit">再按一次退出程序</string>
+    <string name="psw_mistake">账号或密码错误</string>
+    <string name="net_error">网络错误</string>
+    <string name="phone_format_error">手机号码不正确</string>
+    <string name="phone_or_psw_cant_null">手机号或密码不能为空</string>
+    <string name="network_server_error">网络或服务器异常，加载失败！</string>
+    <string name="retry">重试</string>
+    <string name="empty_data">暂无历史报告</string>
+    <string name="report_detail">报告详情</string>
+    <string name="take_upload">拍照上传</string>
+    <string name="take_all_photo">请在拍完所有照片后继续</string>
+    <string name="compare_last">相对您上一次问诊的情况变化</string>
+    <string name="oil_jianshao">是否有头油明显减少的感觉？</string>
+    <string name="touxie_jiaoshao">头屑，头皮瘙痒有无明显的减轻？</string>
+    <string name="saoyang_jianqing">头皮红疹有无明显减轻？</string>
+    <string name="hongzhennongbao_jianshao">脱发速度是否减缓？</string>
+    <string name="loss_speed_compare">是否长出新生绒毛？</string>
+    <string name="upload_success">上传成功</string>
+    <string name="regis">注册</string>
+    <string name="total">"共 "</string>
+    <string name="times">" 次"</string>
+    <string name="scan_result_null">未发现蓝牙设备，请重试</string>
+    <string name="is_medicine">是否在同时使用药物？</string>
+    <string name="is_cuzhuang">头发是否有变粗壮的感觉？</string>
+    <string name="sun">日</string>
+    <string name="mon">一</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+    <string name="thu">四</string>
+    <string name="fri">五</string>
+    <string name="sat">六</string>
+    <string name="device_number">设备编号</string>
+    <string name="question">常见问题</string>
+    <string name="scan">扫描二维码</string>
+    <string name="scan_tip">请扫描头盔内的二维码以获取专家服务</string>
+    <string name="followup">随诊信息</string>
+    <string name="device_scan">设备认证</string>
+    <string name="user_guide">用户手册</string>
+    <string name="download_share">下载分享</string>
+    <string name="auto_login">自动登录</string>
+    <string name="hairloss_history">脱发病史</string>
+
+    <string name="monthly_records">本月治疗的次数:</string>
+    <string name="total_records">" \n  总计治疗次数:"</string>
+    <string name="bind_helmet">绑定头盔</string>
+    <string name="skip">跳过</string>
+    <string name="communication">联系客服</string>
+    <string name="copyright">版权归深圳市智连众康科技有限公司所有</string>
+    <string name="scan_to_download">扫描此二维码下载APP</string>
+    <string name="customer_service">联系客服</string>
+    <string name="scan_to_service">扫描此二维码或添加微信号：slinph18138229194</string>
+    <string name="service_phone">咨询电话：400-801-8030转1</string>
+
+    <string-array name="hour_display">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="minute_display">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+    </string-array>
+
+    <string-array name="half_day">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+    <array name="relative">
+        <item>祖父</item>
+        <item>祖母</item>
+        <item>叔伯</item>
+        <item>父亲</item>
+        <item>亲兄弟</item>
+        <item>外祖父母</item>
+        <item>母亲</item>
+        <item>舅舅</item>
+    </array>
+
+    <array name="more_less">
+        <item>非常多</item>
+        <item>多</item>
+        <item>正常</item>
+    </array>
+
+    <array name="have_no">
+        <item>有</item>
+        <item>无</item>
+    </array>
+
+    <array name="have_no2">
+        <item>是</item>
+        <item>否</item>
+    </array>
+
+    <array name="answer_1">
+        <item>有</item>
+        <item>没有</item>
+        <item>本来就不油</item>
+        <item>出汗多，不好判断</item>
+    </array>
+
+    <array name="answer_2">
+        <item>有</item>
+        <item>没有</item>
+        <item>本来就没有，不好判断</item>
+    </array>
+
+    <array name="answer_3">
+        <item>有</item>
+        <item>没有</item>
+        <item>本来就没有</item>
+    </array>
+
+    <array name="answer_4">
+        <item>有</item>
+        <item>没有</item>
+        <item>使用前已经基本停止掉发，不好判断</item>
+    </array>
+
+    <array name="answer_5">
+        <item>有</item>
+        <item>没有</item>
+    </array>
+
+    <array name="answer_6">
+        <item>有</item>
+        <item>没有</item>
+    </array>
+
+    <array name="answer_7">
+        <item>米诺地尔</item>
+        <item>非那雄胺</item>
+        <item>两者都用</item>
+        <item>没有</item>
+    </array>
+
+    <array name="good_bad">
+        <item>好</item>
+        <item>一般</item>
+        <item>差</item>
+    </array>
+
+    <array name="yin_yang">
+        <item>阳性</item>
+        <item>阴性</item>
+    </array>
+
+    <array name="hair_quantity">
+        <item>1/5</item>
+        <item>1/4</item>
+        <item>1/3</item>
+        <item>1/2</item>
+        <item>没剩多少了</item>
+    </array>
+
+    <array name="hair_speed">
+        <item>越脱越快</item>
+        <item>越脱越慢</item>
+        <item>不再脱发了</item>
+    </array>
+
+    <array name="hair_speed_change">
+        <item>脱发速度减缓</item>
+        <item>停止脱发了</item>
+        <item>头发数量增多</item>
+    </array>
+
+    <array name="disease">
+        <item>心脏病</item>
+        <item>甲状腺功能紊乱</item>
+        <item>肝炎</item>
+        <item>其他：</item>
+    </array>
+
+    <array name="sleep_condition">
+        <item>好</item>
+        <item>一般</item>
+        <item>差</item>
+    </array>
+
+    <array name="marital_condition">
+        <item>已婚</item>
+        <item>未婚</item>
+    </array>
+
+    <array name="yes_no">
+        <item>是</item>
+        <item>否</item>
+    </array>
+
+    <array name="diagnosis_result">
+        <item>男性型脱发（雄激素依赖性脱发）</item>
+        <item>女性雄激素性脱发</item>
+        <item>产后脱发</item>
+        <item>内分泌源性弥漫性脱发</item>
+        <item>休止期脱发</item>
+        <item>红斑狼疮性脱发</item>
+        <item>减肥引起脱发</item>
+        <item>拔毛癖</item>
+        <item>斑秃</item>
+        <item>其他：</item>
+    </array>
+
+    <array name="treatment_method">
+        <item>中药</item>
+        <item>非那雄胺</item>
+        <item>米诺地尔</item>
+        <item>其他：</item>
+    </array>
+
+    <array name="treatment_effect">
+        <item>有效</item>
+        <item>有效但停用后病情反复</item>
+        <item>无效</item>
+    </array>
+
+    <array name="psychology_problem">
+        <item>变老</item>
+        <item>紧张</item>
+        <item>孤独</item>
+        <item>羞于见人</item>
+        <item>拘束</item>
+        <item>失落</item>
+        <item>怕别人嘲笑</item>
+        <item>担忧抑郁</item>
+        <item>不被重视</item>
+        <item>影响学习工作</item>
+        <item>影响睡眠</item>
+    </array>
+
+    <array name="concern_treatment_problem">
+        <item>疗效</item>
+        <item>疗程时间</item>
+        <item>费用</item>
+        <item>影响学习工作</item>
+        <item>其他：</item>
+    </array>
+
+    <array name="your_occupation">
+        <item>公职人员</item>
+        <item>IT人员</item>
+        <item>学生</item>
+        <item>金融从业人员</item>
+        <item>其他技术人员</item>
+        <item>商业贸易</item>
+        <item>其他：</item>
+    </array>
+    <array name="reatment_history">
+        <item>章光101</item>
+        <item>丝域养发</item>
+        <item>其他护发养发机构</item>
+        <item>植发</item>
+    </array>
+
+    <!--养护发-->
+    <array name="hairNumber">
+        <item>多</item>
+        <item>一般</item>
+        <item>少</item>
+    </array>
+    <array name="hairDia">
+        <item>粗壮</item>
+        <item>一般</item>
+        <item>纤细</item>
+    </array>
+    <array name="hairColor">
+        <item>纯黑</item>
+        <item>不太黑</item>
+        <item>较黄</item>
+    </array>
+    <array name="hairShine">
+        <item>好</item>
+        <item>一般</item>
+        <item>差</item>
+    </array>
+    <array name="whiteHair">
+        <item>无</item>
+        <item>少许</item>
+        <item>较多</item>
+    </array>
+    <array name="hairBifurcate">
+        <item>是</item>
+        <item>否</item>
+    </array>
+    <array name="hairMeek">
+        <item>是</item>
+        <item>否</item>
+    </array>
+    <array name="hairElasticity">
+        <item>好</item>
+        <item>一般</item>
+        <item>差</item>
+    </array>
+    <array name="hairLossOneDayNumber0">
+        <item>30根以下</item>
+        <item>30-60根</item>
+        <item>60-100根</item>
+        <item>100根以上</item>
+    </array>
+    <array name="hairLossOneDayNumber">
+        <item>10-30根</item>
+        <item>30-60根</item>
+        <item>60-100根</item>
+        <item>100根以上</item>
+    </array>
+
+    <array name="timeAsleep">
+        <item>23点以前</item>
+        <item>23点-24点</item>
+        <item>24点-凌晨1点</item>
+        <item>凌晨1点以后</item>
+    </array>
+    <array name="sleepQuality">
+        <item>好</item>
+        <item>一般</item>
+        <item>差</item>
+    </array>
+    <array name="smokeQuality">
+        <item>极少</item>
+        <item>半包/天</item>
+        <item>半包-1包/天</item>
+        <item>1包以上/天</item>
+    </array>
+    <string name="title_activity_protocol">ProtocolActivity</string>
+    <string name="large_text">
+        "第一条 特别提示\n\n"
+
+        "1、深圳市智连众康科技有限公司（以下简称“智连众康”）在此特别提醒您（用户）在注册成为用户之前，"
+        "请认真阅读本《软件许可及服务协议》（以下简称“协议”），确保您充分理解本协议中各条款，"
+        "包括免除智连众康责任的条款及限制用户权利的条款。请您审慎阅读并选择接受或不接受本协议。除非您接受本协议所有条款，"
+        "否则您无权注册、登录或使用本协议所涉服务。您的注册、登录、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。\n"
+        "2、本协议约定智连众康与用户之间关于软件服务（以下简称“服务”）的权利义务。“用户”是指注册、 登录、使用本服务的个人。"
+        "本协议可由智连众康随时更新， 更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，在智连众康修改协议条款后，"
+        "如果用户不接受修改后的条款，请立即停止使用智连众康提供的服务，用户继续使用智连众康提供的服务将被视为接受修改后的协议。\n\n"
+
+        "第二条 账号注册\n\n"
+
+        "1、用户在使用本服务前需要注册一个账号。账号应当使用手机号码绑定注册， 请用户使用尚未与账号绑定的本人手机号码，"
+        "以及未被智连众康根据本协议封禁的手机号码注册账号。 智连众康可以根据用户需求或产品需要对账号注册和绑定的方式进行变更，"
+        "而无须事先通知用户。\n"
+        "2、如果注册申请者有被智连众康封禁的先例或涉嫌虚假注册及滥用他人名义注册，及其他不能得到许可的理由， 智连众康将拒绝其注册申请。\n"
+        "3、注册成功后，用户可以通过软件中“修改密码”界面浏览或更改本人的个人信息。 但不能修改系统自动分配给用户的ID。\n"
+        "4、用户注册时所填写的个人信息如有变动，用户需通过“修改密码”界面及时更改。 用户因未及时更改造成的损失智连众康概不负责。\n\n"
+
+        "第三条 服务内容\n\n"
+
+        "1、本服务的具体内容由智连众康根据实际情况提供，包括但不限于："
+            "广告播放：用户安装运行“i黑密”软件后可以在软件界面观看广告；\n"
+        "2、用户可以浏览智连众康网站(http://www.slinph.com/)了解智连众康提供的服务内容。\n"
+        "3、在遵守相关法律法规前提下，根据合作广告主的要求，智连众康有权决定用户在“酷划”软件界面上看到的广告内容。\n"
+        "4、用户需要填写自己的真实姓名，性别，年龄后，上传自己的病情报告及照片用于后台专家诊断病情。\n\n"
+
+        "第四条 用户账户安全\n\n"
+
+        "1、注册用户的登陆密码管理由用户来负责，用户不应把自己的密码告诉其他第三者。\n"
+        "2、用户如果遗失自己的登陆密码，需及时通知智连众康，并按照智连众康的指导来解决该问题。 \n\n"
+
+        "第五条 服务的变更、中断、终止\n\n"
+
+        "1、因设备维修或更换、故障和通信中断等技术原因而中断业务，智连众康可视情况事前或事后通知用户。\n"
+        "2、智连众康临时中断业务时将在智连众康网站(http://www.slinph.com/)公告。\n"
+        "3、当智连众康用户发生如下情况时，智连众康可单方面终止本协议，取消用户继续使用智连众康产品及服务的资格：\n"
+        "（1） 用户死亡；\n"
+        "（2） 盗用他人的个人信息或手机；\n"
+        "（3） 注册用户时提供虚假信息；\n"
+        "（4） 妨碍其他用户的正常使用；\n"
+        "（5） 伪称是智连众康的工作人员或管理人员；\n"
+        "（6） 擅自强行更改智连众康的计算机系统，或威胁侵入系统；\n"
+        "（7） 擅自传播谣言，用各种手段来毁损智连众康的名誉与妨碍智连众康的正常营业；\n"
+        "（8） 利用智连众康的产品及服务宣传垃圾广告；\n"
+        "（9） 其他违反本协议的行为及违法行为。\n\n"
+
+        "第六条 用户个人隐私信息保护\n\n"
+
+        "1、智连众康未经用户同意不向任何第三方公开、透露用户个人隐私信息。但以下特定情形除外：\n"
+        "（1） 智连众康根据法律法规规定或有权机关的指示提供用户的个人隐私信息；\n"
+        "（2） 由于用户将其用户密码告知他人或与他人共享注册帐户与密码，由此导致的任何个人信息的泄漏， 或其他非因智连众康原因导致的个人隐私信息的泄露；\n"
+        "（3） 用户自行向第三方公开其个人隐私信息；\n"
+        "（4） 用户与智连众康及合作单位之间就用户个人隐私信息的使用公开达成约定， 智连众康因此向合作单位公开用户个人隐私信息；\n"
+        "（5） 任何由于黑客攻击、电脑病毒侵入及其他非因智连众康原因导致用户个人隐私信息的泄露。\n"
+        "2、用户同意智连众康可在以下事项中使用用户的个人隐私信息：\n"
+        "（1） 向用户及时发送重要通知，如软件更新、本协议条款的变更；\n"
+        "（2） 智连众康内部进行审计、数据分析和研究等，以改进智连众康的产品、服务和与用户之间的沟通；\n"
+        "（3） 依本协议约定，智连众康管理、审查用户信息及进行处理措施；\n"
+        "（4） 适用法律法规规定的其他事项。\n"
+        "3. 智连众康可以使用隐藏用户面部信息的照片用于推广宣传产品。\n\n"
+
+        "第七条 用户使用规范\n\n"
+
+        "1、智连众康用户不能利用酷划账号或智连众康提供的服务进行如下行为：\n"
+        "（1） 用户擅自更改、消除或毁损智连众康广告业务提供的各种信息；\n"
+        "（2） 利用技术手段批量建立虚假账号；\n"
+        "（3） 侵害智连众康以及第三者的知识产权；\n"
+        "（4） 提交、发布虚假信息，或盗用他人资料，冒充、利用他人名义；\n"
+        "（5） 未经智连众康许可,而传播广告或淫秽暴力等信息；\n"
+        "（6） 其他不遵守本协议的行为；\n"
+        "（7） 其他违法以及不正当的行为。\n\n"
+
+        "第八条 免责条款\n\n"
+
+        "1、智连众康提供的服务中包括广告，用户同意在使用过程中显示智连众康与第三方供应商、 合作伙伴提供的广告。"
+        除法律法规明确规定外，用户应自行对依该广告信息进行的交易负责， 对用户因依该广告信息进行的交易或前述广告商提供的内容而遭受的损失或损害，"
+        智连众康不承担任何责任。\n\n"
+
+        "第九条 知识产权保护\n\n"
+
+        "1、智连众康的商标、广告业务以及所提供的有关广告内容的知识产权都归属于智连众康。 用户从智连众康获得的信息内容不经智连众康的许可不能擅自复制、发布与出版。\n\n"
+
+        "第十条 其他\n\n"
+
+        "1、智连众康郑重提醒用户注意本协议中免除智连众康责任和限制用户权利的条款，请用户仔细阅读，自主考虑风险。 未成年人应在法定监护人的陪同下阅读本协议。\n"
+        "2、本协议的效力、解释及纠纷的解决，适用于中华人民共和国法律。若用户和智连众康之间发生任何纠纷或争议， 首先应友好协商解决，协商不成的，用户同意将纠纷或争议提交智连众康住所地有管辖权的人民法院管辖。\n"
+        "3、本协议的任何条款无论因何种原因无效或不具可执行性，其余条款仍有效，对双方具有约束力。\n"
+        "4、本协议的版权由智连众康所有，智连众康保留一切解释和修改的权力。\n"
+        "5、本协议从2016年4月30日起适用。\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="check_protocol"><u>点击登录默认为已同意《使用协议》</u></string>
+    <string name="agree"><u>我已阅读同意《使用协议》</u></string>
+</resources>

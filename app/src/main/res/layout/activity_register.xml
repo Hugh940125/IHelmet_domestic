@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/regis"
+            android:id="@+id/tv_report_list"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/btn_back_wirth"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ib_regis_back"/>
+    </FrameLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="30dp">
+    <EditText
+        android:id="@+id/et_realname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="输入真实姓名"
+        android:inputType="textUri|textMultiLine"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+<!--    <EditText
+        android:id="@+id/et_gender"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="输入性别"
+        android:inputType="textUri|textMultiLine"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>-->
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:background="@mipmap/bg_input_box"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittexth"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别:"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <RadioButton
+                android:buttonTint="@color/gray_dark"
+                android:textColor="@color/gray_dark"
+                android:id="@+id/rb_m"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="男"/>
+
+            <RadioButton
+                android:buttonTint="@color/gray_dark"
+                android:textColor="@color/gray_dark"
+                android:id="@+id/rb_f"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="女"/>
+
+        </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="输入年龄"
+        android:inputType="textUri|textMultiLine"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@mipmap/bg_input_box"
+            android:hint="输入手机号码"
+            android:inputType="phone"
+            android:maxLength="16"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearanceSmall"
+            />
+
+        <Button
+            android:id="@+id/btn_getCaptcha"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/edittexth"
+            android:background="@drawable/selector_btn_register"
+            android:text="发送验证码"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_captcha"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="@string/typeCaptcha"
+        android:inputType="number"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="输入密码"
+        android:inputType="textUri|textMultiLine"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:password="true"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <EditText
+        android:id="@+id/et_password2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittexth"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_input_box"
+        android:hint="确认密码"
+        android:inputType="textUri|textMultiLine"
+        android:maxLength="16"
+        android:paddingLeft="10dp"
+        android:password="true"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb_is_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_agree_protocol"
+            android:text="@string/agree"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/common_btn_radius_blue_shape"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

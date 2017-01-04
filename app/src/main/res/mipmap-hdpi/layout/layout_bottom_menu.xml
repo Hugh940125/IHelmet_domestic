@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_menu_height"
+    android:gravity="bottom"
+    android:background="@color/gray_light"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_suggest"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@drawable/bottom_menu_suggest_selector"
+        android:gravity="center"
+        android:onClick="onTabClick"
+        android:paddingTop="5dp"
+        android:text="ASSESS"
+        android:textColor="@drawable/bottom_menu_color_selector" />
+
+    <Button
+        android:id="@+id/btn_light"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@drawable/bottom_menu_light_selector"
+        android:gravity="center"
+        android:onClick="onTabClick"
+        android:paddingTop="5dp"
+        android:text="LIGHT"
+        android:textColor="@drawable/bottom_menu_color_selector" />
+
+    <Button
+        android:id="@+id/btn_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:drawableTop="@drawable/bottom_menu_mine_selector"
+        android:gravity="center"
+        android:onClick="onTabClick"
+        android:paddingTop="5dp"
+        android:text="MINE"
+        android:textColor="@drawable/bottom_menu_color_selector" />
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.IntlLoginActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/remind_logo"
+        android:layout_above="@id/content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/iv_logo"/>
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@id/iv_logo"
+        android:id="@+id/content"
+        >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/fl_email">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@mipmap/email"
+            android:padding="6dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/iv_email"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@mipmap/error"
+            android:padding="6dp"
+            android:id="@+id/iv_cancel"
+            android:layout_gravity="right"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_below="@id/fl_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/fl_psw"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@mipmap/psw"
+            android:padding="6dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@mipmap/error"
+            android:padding="6dp"
+            android:id="@+id/iv_cancel1"
+            android:layout_gravity="right"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Login"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@id/fl_psw"
+        android:id="@+id/bt_login"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/bt_login"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/facebook"
+            android:background="@android:color/transparent"
+            android:id="@+id/ib_facebook"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/google_plus"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/ib_google_plus"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/linkedin"
+            android:background="@android:color/transparent"
+            android:id="@+id/ib_linked_in"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

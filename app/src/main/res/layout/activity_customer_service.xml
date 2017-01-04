@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.CustomerServiceActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/customer_service"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/btn_back_wirth"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ib_customer_back"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/weixinhao"
+        android:layout_centerInParent="true"
+        android:id="@+id/iv_code"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_code"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="@string/scan_to_service"
+        android:gravity="center"
+        android:id="@+id/tv_help"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_help"
+        android:textSize="15sp"
+        android:text="@string/service_phone"
+        android:gravity="center"/>
+
+</RelativeLayout>

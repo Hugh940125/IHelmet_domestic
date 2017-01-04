@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin10"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="Please set the light time"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/tv_ligth_time"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/mtop30"
+        android:drawableRight="@mipmap/wo_btn_set_time"
+        android:text="00:00"
+        android:gravity="center"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+    android:id="@+id/cb_light_push"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:text="To arrive at the light time push notifications"
+    android:textSize="20sp"
+    android:textColor="@android:color/holo_blue_light"
+    />
+    <!--<CheckBox-->
+        <!--android:id="@+id/cb_light_push"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:text="到达光照时间推送提醒"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="@android:color/holo_blue_light"-->
+        <!--android:button="@drawable/check_box_style"-->
+        <!--/>-->
+    <include layout="@layout/view"
+             android:layout_width="match_parent"
+             android:layout_height="2dp"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:padding="@dimen/activity_vertical_margin"-->
+        <!--android:text="请设定每天使用营养液时间"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_drink_time"-->
+        <!--android:textSize="40sp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="@dimen/mtop30"-->
+        <!--android:drawableRight="@mipmap/wo_btn_set_time"-->
+        <!--android:gravity="center"-->
+        <!--android:text="00:00"-->
+        <!--android:padding="@dimen/activity_vertical_margin"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"/>-->
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/cb_drink_push"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:text="到达使用时间推送提醒"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="@android:color/holo_blue_light"-->
+        <!--android:button="@drawable/check_box_style"-->
+        <!--/>-->
+    <!--<include layout="@layout/view"-->
+             <!--android:layout_width="match_parent"-->
+             <!--android:layout_height="2dp"/>-->
+</LinearLayout>

@@ -1,0 +1,157 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/wo_icon"
+            android:drawablePadding="@dimen/margin10"
+            android:drawableRight="@mipmap/wo_btn_right"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin10"
+            android:text="My equipment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:background="#DDDFE4"/>
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/wo_icon_alarm"
+            android:drawablePadding="@dimen/margin10"
+            android:drawableRight="@mipmap/wo_btn_right"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin10"
+            android:text="My alert"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:background="#DDDFE4"/>
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/wo_icon_light"
+            android:drawablePadding="@dimen/margin10"
+            android:drawableRight="@mipmap/wo_btn_right"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin10"
+            android:text="Choice model"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:background="#DDDFE4"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/t4"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:drawableLeft="@mipmap/wo_icon_light"-->
+            <!--android:drawablePadding="@dimen/margin10"-->
+            <!--android:drawableRight="@mipmap/wo_btn_right"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:padding="@dimen/margin10"-->
+            <!--android:text="绑定头盔"-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+            <!--/>-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginLeft="@dimen/margin10"-->
+            <!--android:layout_marginStart="@dimen/margin10"-->
+            <!--android:background="#DDDFE4"/>-->
+
+<!--        <TextView
+            android:id="@+id/t5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/wo_icon_integral"
+            android:drawablePadding="@dimen/margin10"
+            android:drawableRight="@mipmap/wo_btn_right"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin10"
+            android:text="@string/myCredits"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:background="#DDDFE4"/>-->
+
+        <TextView
+            android:id="@+id/mine_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/wo_icon_archives"
+            android:drawablePadding="@dimen/margin10"
+            android:drawableRight="@mipmap/wo_btn_right"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin10"
+            android:text="Change password"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:background="#DDDFE4"/>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/wo_icon_password"
+            android:drawablePadding="@dimen/margin10"
+            android:drawableRight="@mipmap/wo_btn_right"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin10"
+            android:text="Log out"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin10"
+            android:background="#DDDFE4"/>
+    </LinearLayout>
+</ScrollView>

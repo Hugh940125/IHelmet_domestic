@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.ScanActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/device_scan"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/btn_back_wirth"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ib_scan_back"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:text="@string/scan_tip"
+        android:id="@+id/tv_scan_tip"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/scan"
+            android:background="@drawable/common_btn_radius_blue_shape"
+            android:text="@string/scan"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

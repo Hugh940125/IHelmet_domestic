@@ -1,0 +1,1138 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="@string/hairloss_history"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/btn_back_wirth"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="10dp"
+            android:id="@+id/ib_info_back"/>
+    </FrameLayout>
+    
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/sl_ques">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/global_theme_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="脱发病史"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="脱发多久了"
+            android:textSize="@dimen/font_middle" />
+
+        <com.slinph.ihelmet.ihelmet_domestic.view.MonthProgressBar
+            android:id="@+id/slider_time"
+            style="@style/MonthProgressBar_Twinkle_Night"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-20dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            custom:progress_current="0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3个月" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="15年" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有无家族遗传脱发史（多选）"
+                android:textSize="@dimen/font_middle" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_is_relative"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:max_select="1" />
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_relative"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:max_select="-1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="头皮状况"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头油" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_scalp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头屑" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_dandruff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头皮有无红疹" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_scalp_rash"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头皮是否瘙痒" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_scalp_itching"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头皮有无脓包" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_scalp_pustule"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="毛发及体毛状况"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头发直径" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_hair_dia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="白发情况" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_white_hair"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="头发弹性" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_hair_elasticity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="每日掉发量" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_hair_loss_one_day_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/experiment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="轻拉毛实验" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_light_nap_experiment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/experiment"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/default_image_border_shape"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="用拇指与食指轻拉头发，脱落2根以上的为阳性，否则为阴性"
+                android:textColor="@color/button_orange"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您感觉头发量相比脱发前减少了"
+                android:textSize="@dimen/font_normal" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_quantity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:max_select="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您感觉目前的脱发速度较以前"
+                android:textSize="@dimen/font_normal" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_speed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:max_select="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身体其他部分毛发情况"
+                android:textSize="@dimen/font_middle" />
+
+            <ImageView
+                android:id="@+id/img_hair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:src="@mipmap/body_hair_less" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_radio_group"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:button="@drawable/select_radio_button"
+                    android:checked="true" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:button="@drawable/select_radio_button" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:button="@drawable/select_radio_button" />
+            </RadioGroup>
+
+            <!--<LinearLayout
+                android:id="@+id/ll_hair"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_radio_group">
+                <CheckBox
+                    android:id="@+id/cb_hair0"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:button="@drawable/select_radio_button" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/cb_hair1"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:button="@drawable/select_radio_button" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/cb_hair2"
+                    android:layout_width="40dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:button="@drawable/select_radio_button" />
+            </LinearLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="少" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="点击选择您的体毛状况" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="多" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="其他状况"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有无其他系统性疾病（多选）"
+                android:textSize="@dimen/font_normal" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_is_disease"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:max_select="1" />
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_disease"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:max_select="-1"/>
+
+            <EditText
+                android:id="@+id/et_system_disease"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请手动填写"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="生活情况"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="习惯的入睡时间" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_time_asleep"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="睡眠质量" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_sleep_quality"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="是否嗜好辛辣，油炸食物" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_food_hobby"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="是否感觉生活/工作压力大" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_lives_or_job_stress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="是否吸烟" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_if_smoke"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="吸烟量" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_smoke_quality"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="是否嗜酒" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_if_sot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="婚育状况"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="婚育状况" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_marital_condition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="近期是否有生育计划" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_marital_plan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_spacing"
+                app:max_select="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="过往经历"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="以前是否在公立医疗机构寻求过治疗" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_public_treatment"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:max_select="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="诊断的结果为：" />
+
+                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                    android:id="@+id/flowlayout_treatment_result"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    app:max_select="1" />
+
+                <EditText
+                    android:id="@+id/et_public_result"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请手动填写"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="治疗的方法为：" />
+
+                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                    android:id="@+id/flowlayout_treatment_method"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:max_select="-1" />
+
+                <EditText
+                    android:id="@+id/et_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请手动填写"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="治疗的效果" />
+
+                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                    android:id="@+id/flowlayout_treatment_effect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    app:max_select="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否在社会机构寻求过治疗" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_socio_treatment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:max_select="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="社会机构治疗历史" />
+
+                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                    android:id="@+id/flowlayout_socio_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    app:max_select="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="治疗效果" />
+
+                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                    android:id="@+id/flowlayout_socio_treatment_effect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    app:max_select="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="心理状况（多选）"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="脱发导致以下哪些心理问题，并影响生活质量" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_psychology_problem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                app:max_select="-1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最关心治疗中的哪些问题" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_concern_problem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                app:max_select="-1" />
+
+            <EditText
+                android:id="@+id/et_question_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请手动填写"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="职业状况"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您是否为以下职业（与病情及治疗方案有关）" />
+
+            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                android:id="@+id/flowlayout_occupation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                app:max_select="1" />
+
+            <EditText
+                android:id="@+id/et_job_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请手动填写"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#F77" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/common_btn_radius_blue_shape"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,205 @@
+<RelativeLayout android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/check_layout">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_check_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="15sp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="已将您的资料上传至后台，如照片审核通过将在3天内完成综合方案制定并发送至您的手机。在此之前您可以使用体验模式光照。"/>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:columnCount="2">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            app:layout_columnWeight="1"
+            android:layout_height="180dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/new_check1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/gray_light"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="审核中"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:padding="5dp"
+                android:id="@+id/tv_check1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:text="更换照片"
+                android:textColor="@color/blue"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                android:id="@+id/bt_check1"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            app:layout_columnWeight="1"
+            android:layout_height="180dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/new_check2"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/gray_light"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="审核中"
+                    android:id="@+id/tv_check2"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="更换照片"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:id="@+id/bt_check2"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            app:layout_columnWeight="1"
+            android:layout_height="180dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/new_check3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/gray_light"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="审核中"
+                    android:id="@+id/tv_check3"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="更换照片"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:id="@+id/bt_check3"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            app:layout_columnWeight="1"
+            android:layout_height="180dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/new_check4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/gray_light"
+                android:scaleType="fitXY"
+                android:layout_margin="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="审核中"
+                    android:id="@+id/tv_check4"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="更换照片"
+                    android:textColor="@color/blue"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:id="@+id/bt_check4"/>
+            </LinearLayout>
+        </FrameLayout>
+</android.support.v7.widget.GridLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="确认更新"
+        android:visibility="invisible"
+        android:id="@+id/bt_updatephoto"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_btn_radius_blue_shape"
+        android:layout_marginBottom="30dp"/>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

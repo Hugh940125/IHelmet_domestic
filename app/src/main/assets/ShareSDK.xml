@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <ShareSDK 
+        AppKey = "164a9c5bbfce6"/> <!-- 修改成你在sharesdk后台注册的应用的appkey"-->
+
+    <Facebook
+        Id="8"
+        SortId="8"
+        ConsumerKey="258308467884497"
+        ConsumerSecret="1b427f915bb8c90118d915c15f7fe83f"
+        RedirectUrl="http://mob.com"
+        Enable="true"/>
+    
+    <LinkedIn
+    	Id="20"
+        SortId="20"
+        ApiKey="811jszq3dfu4hl"
+        SecretKey="Zfsc3iYWbA9ofPPy"
+        RedirectUrl="http://sharesdk.cn"
+        Enable="true" />
+
+    <GooglePlus
+        Id="21"
+        SortId="21"
+        ClientID="295723379411-togdqsr77r5jqmm0hnq6ug9jhklaaonk.apps.googleusercontent.com"
+        RedirectUrl="http://localhost"
+        ShareByAppClient = "false"
+        Enable="true" />
+</DevInfor>
