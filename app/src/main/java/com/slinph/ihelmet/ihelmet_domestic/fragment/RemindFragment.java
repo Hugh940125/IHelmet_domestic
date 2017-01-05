@@ -72,7 +72,7 @@ public class RemindFragment extends Fragment implements View.OnClickListener{
         HttpUtils.postAsync(mActivity, Url.rootUrl+"/iheimi/servicesTime/selectOneByExample", new HttpUtils.ResultCallback<ResultData<PushVO>>() {
             @Override
             public void onError(int statusCode, Throwable error) {
-
+                Toast.makeText(mActivity, "网络异常"+statusCode+"0x08", Toast.LENGTH_SHORT).show();
             }
 
             @Override

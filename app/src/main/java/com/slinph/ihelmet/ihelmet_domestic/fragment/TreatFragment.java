@@ -132,7 +132,7 @@ public class TreatFragment extends BaseFragment implements Runnable{
        HttpUtils.postAsync(mContext, Url.rootUrl+"/iheimi/treatmentRecords/insert", new HttpUtils.ResultCallback<ResultData<TreatmentRecordsVO>>() {
            @Override
            public void onError(int statusCode, Throwable error) {
-               Toast.makeText(mContext, "网络错误", Toast.LENGTH_SHORT).show();
+               Toast.makeText(mContext, "网络异常"+statusCode+"0x09", Toast.LENGTH_SHORT).show();
            }
 
            @Override
@@ -1029,7 +1029,7 @@ public class TreatFragment extends BaseFragment implements Runnable{
         HttpUtils.postAsync(getActivity(), Url.rootUrl+"/iheimi/treatmentRecords/selectAllByExample", new HttpUtils.ResultCallback<ResultData<List<TreatmentRecordsVO>>>() {
             @Override
             public void onError(int statusCode, Throwable error) {
-                Toast.makeText(mContext, "网络错误", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "网络异常"+statusCode+"0x01", Toast.LENGTH_SHORT).show();
             }
 
             @Override

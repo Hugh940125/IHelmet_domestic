@@ -59,7 +59,7 @@ public class ChangeUserInfoActivity extends AppCompatActivity {
                     HttpUtils.postAsync(ChangeUserInfoActivity.this, Url.rootUrl+"/iheimi/user/update", new HttpUtils.ResultCallback<ResultData>() {
                                 @Override
                                 public void onError(int statusCode, Throwable error) {
-                                    Toast.makeText(ChangeUserInfoActivity.this, "网络错误", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ChangeUserInfoActivity.this, "网络异常"+statusCode+"0x03", Toast.LENGTH_SHORT).show();
                                 }
 
                                 @Override

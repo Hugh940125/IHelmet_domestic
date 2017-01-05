@@ -12,6 +12,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.slinph.ihelmet.ihelmet_domestic.R;
@@ -47,6 +49,7 @@ public class WelcomeActivity extends Activity {
     private String phone;
     private Handler handler;
     private int codeCount;
+    private ProgressBar pb_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,8 @@ public class WelcomeActivity extends Activity {
         // 2.36（不包括）之前的版本需要调用以下2行代码
         Intent service = new Intent(context, XGPushService.class);
         context.startService(service);*/
+
+        pb_login = (ProgressBar) findViewById(R.id.pb_login);
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
             if(ActivityCompat.shouldShowRequestPermissionRationale(this,Manifest.permission.READ_CONTACTS)){
@@ -124,18 +129,19 @@ public class WelcomeActivity extends Activity {
     public void autoLogin(){
         boolean save_or_not = SharePreferencesUtils.getBoolean(this, "save_or_not", false);
         if (save_or_not){
-            Log.e("save_or_not",save_or_not+"");
             phone_input = SharePreferencesUtils.getString(this, "SP_PHONE", "");
             password_input = SharePreferencesUtils.getString(this, "SP_PSW", "");
             Log.e(phone_input+"__",password_input+"__");
             if (!TextUtils.isEmpty(password_input)&&!TextUtils.isEmpty(password_input)){
+                if (pb_login != null){
+                    pb_login.setVisibility(View.VISIBLE);
+                }
                 Login();
             }else {
                 startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));
                 finish();
             }
         }else {
-            Log.e("save_or_not",save_or_not+"");
             startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));
             finish();
         }
@@ -219,9 +225,7 @@ public class WelcomeActivity extends Activity {
 
             @Override
             public void onError(int statusCode, Throwable error) {
-                Toast.makeText(WelcomeActivity.this, R.string.net_error, Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(WelcomeActivity.this,LoginActivity.class));
-                finish();
+                Toast.makeText(WelcomeActivity.this, "网络异常"+statusCode+"0x04", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -229,8 +233,10 @@ public class WelcomeActivity extends Activity {
                 if (response.getCode() == 200){
                     List<BindInfoVO> data = response.getData();
                     if (data != null){
-                        Log.e("BindInfo",data+"");
+                        Log.e("条形码集合",data.toString());
                         codeCount = data.size();
+                    }
+                    if (data != null && data.size() > 0){
                         if (mid != 0){
                             StaticVariables.MID = String.valueOf(mid);
                             JudgeJump();
@@ -344,7 +350,7 @@ public class WelcomeActivity extends Activity {
                                         long currentTimeMillis = System.currentTimeMillis();
                                         Log.e("现在的毫秒数",currentTimeMillis + "");
                                         long timeDistence = currentTimeMillis - reportTime;
-                                        if (timeDistence >= 3600000L  && size < codeCount*5){//2592000000  3600000
+                                        if (timeDistence >= 432000000L  && size < codeCount*5){//2592000000  3600000
                                             startActivity(new Intent(WelcomeActivity.this,FollowUpActivity.class));
                                             WelcomeActivity.this.finish();
                                         }else {
@@ -354,59 +360,6 @@ public class WelcomeActivity extends Activity {
                                 }
                             });
                         }
-                        /*HttpUtils.postAsync(WelcomeActivity.this, Url.rootUrl+"/iheimi/patientQualified/selectOneByExample", new HttpUtils.ResultCallback<ResultData<QualifiedVO>>() {
-                            @Override
-                            public void onError(int statusCode, Throwable error) {
-                            }
-
-                            @Override
-                            public void onResponse(ResultData<QualifiedVO> response) {
-                                if (response.getSuccess()){
-                                    QualifiedVO da = response.getData();
-                                    if (da != null){
-                                        final Date create_dtm = da.getCreate_dtm();
-                                        final long time = create_dtm.getTime();
-                                        Log.e("查询审核信息时间",create_dtm + "");
-
-                                        HttpUtils.postAsync(WelcomeActivity.this, Url.rootUrl+"/iheimi/treatmentPrograms/selectByExample", new HttpUtils.ResultCallback<ResultData<Page<TreatmentProgramsVO>>>() {
-                                            @Override
-                                            public void onError(int statusCode, Throwable error) {
-
-                                            }
-
-                                            @Override
-                                            public void onResponse(ResultData<Page<TreatmentProgramsVO>> response) {
-                                                if (response.getSuccess()){
-                                                    Page<TreatmentProgramsVO> dat = response.getData();
-                                                    List<TreatmentProgramsVO> list = dat.getList();
-                                                    int size = list.size();
-
-                                                    Log.e("报告份数",size + "");
-                                                    Date createDtm = data.getCreateDtm();
-                                                    Log.e("查询最新报告时间",createDtm + "");
-                                                    long reportTime = create_dtm.getTime();
-                                                    Log.e("报告时间的毫秒数",reportTime + "");
-                                                    long currentTimeMillis = System.currentTimeMillis();
-                                                    Log.e("现在的毫秒数",currentTimeMillis + "--"+time);
-                                                    long timeDistence = currentTimeMillis - reportTime;
-                                                    if (timeDistence >= 2592000000L && time >= reportTime && size < codeCount*5){//2592000000   3600000
-                                                        startActivity(new Intent(WelcomeActivity.this,FollowUpActivity.class));
-                                                        WelcomeActivity.this.finish();
-                                                    }else {
-                                                        gotoHome();
-                                                    }
-
-                                                }
-                                            }
-                                        });
-                                    }
-                                }
-                            }
-                        });*/
-/*                        Long id = data.getId();
-                        if (id != null && !String.valueOf(id).equals(StaticVariables.MID)){
-                            StaticVariables.USER_IS_SHOW_WAIT = true;
-                        }*/
                     }
                 }else{
                     Toast.makeText(WelcomeActivity.this, response.getMsg(), Toast.LENGTH_SHORT).show();

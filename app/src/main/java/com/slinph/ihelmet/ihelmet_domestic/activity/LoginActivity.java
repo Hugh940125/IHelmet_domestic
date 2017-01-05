@@ -146,7 +146,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     @Override
                     public void onError(int statusCode, Throwable error) {
                         alertDialog.dismiss();
-                        Toast.makeText(LoginActivity.this, "网络错误+1", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "网络异常"+statusCode+"0x02", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
@@ -214,7 +214,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public void onError(int statusCode, Throwable error) {
-                Toast.makeText(LoginActivity.this, "网络错误+2", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "网络异常"+statusCode+"0x04", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -262,7 +262,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         HttpUtils.postAsync(this,Url.rootUrl+"/iheimi/treatmentPrograms/selectOneNew",new HttpUtils.ResultCallback<ResultData<TreatmentProgramsVO>>(){
             @Override
             public void onError(int statusCode, Throwable error) {
-                Toast.makeText(LoginActivity.this, "网络错误+3", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginActivity.this, "网络异常"+statusCode+"0x05", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -334,7 +334,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                         long currentTimeMillis = System.currentTimeMillis();
                                         Log.e("现在的毫秒数",currentTimeMillis + "");
                                         long timeDistence = currentTimeMillis - reportTime;
-                                        if (timeDistence >= 3600000L  && size < codeCount*5){//2592000000  3600000
+                                        if (timeDistence >= 432000000L  && size < codeCount*5){//2592000000  3600000  432000000
                                             startActivity(new Intent(LoginActivity.this,FollowUpActivity.class));
                                             LoginActivity.this.finish();
                                         }else {
@@ -344,57 +344,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 }
                             });
                         }
-                        /*HttpUtils.postAsync(LoginActivity.this, Url.rootUrl+"/iheimi/patientQualified/selectOneByExample", new HttpUtils.ResultCallback<ResultData<QualifiedVO>>() {
-                                    @Override
-                                    public void onError(int statusCode, Throwable error) {
-                                    }
-
-                                    @Override
-                                    public void onResponse(ResultData<QualifiedVO> response) {
-                                        if (response.getSuccess()){
-                                            QualifiedVO da = response.getData();
-                                            if (da != null){
-                                                final Date create_dtm = da.getCreate_dtm();
-                                                final long time = create_dtm.getTime();
-                                                Log.e("查询审核信息时间",create_dtm + "");
-
-                                                HttpUtils.postAsync(LoginActivity.this, Url.rootUrl+"/iheimi/treatmentPrograms/selectByExample", new HttpUtils.ResultCallback<ResultData<Page<TreatmentProgramsVO>>>() {
-                                                    @Override
-                                                    public void onError(int statusCode, Throwable error) {
-                                                    }
-
-                                                    @Override
-                                                    public void onResponse(ResultData<Page<TreatmentProgramsVO>> response) {
-                                                        if (response.getSuccess()){
-                                                            Page<TreatmentProgramsVO> dat = response.getData();
-                                                            List<TreatmentProgramsVO> list = dat.getList();
-                                                            int size = list.size();
-                                                            Log.e("报告份数",size + "");
-                                                            Date createDtm = data.getCreateDtm();
-                                                            Log.e("查询最新报告时间",createDtm + "");
-                                                            long reportTime = create_dtm.getTime();
-                                                            Log.e("报告时间的毫秒数",reportTime + "");
-                                                            long currentTimeMillis = System.currentTimeMillis();
-                                                            Log.e("现在的毫秒数",currentTimeMillis + "");
-                                                            long timeDistence = currentTimeMillis - reportTime;
-                                                            if (timeDistence >= 2592000000L && time >= reportTime && size < codeCount*5){//2592000000  3600000
-                                                                startActivity(new Intent(LoginActivity.this,FollowUpActivity.class));
-                                                                LoginActivity.this.finish();
-                                                            }else {
-                                                                gotoHome();
-                                                            }
-                                                        }
-                                                    }
-                                                });
-                                            }
-                                        }
-                                    }
-                                }, new String[]{"patientId", StaticVariables.MID}
-                                , new String[]{"type", String.valueOf(StaticVariables.CHECK_TYPE)});*/
-/*                        Long id = data.getId();
-                        if (id != null && !String.valueOf(id).equals(StaticVariables.MID)){
-                            StaticVariables.USER_IS_SHOW_WAIT = true;
-                        }*/
                     }
                 }else{
                     Toast.makeText(LoginActivity.this, response.getMsg(), Toast.LENGTH_SHORT).show();

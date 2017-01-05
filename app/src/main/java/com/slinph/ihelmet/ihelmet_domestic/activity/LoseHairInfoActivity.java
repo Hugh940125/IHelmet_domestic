@@ -483,11 +483,11 @@ public class LoseHairInfoActivity extends Activity {
                         break;
                     case R.id.flowlayout_dandruff:
                         if ("非常多".equals(str)){
-                            Choice = "0";
+                            Choice = "3";
                         }else if("多".equals(str)) {
                             Choice = "1";
                         }else{
-                            Choice = "2";
+                            Choice = "0";
                         }
                         map.put("headCrumbs", Choice);//头屑
                         break;
@@ -669,7 +669,7 @@ public class LoseHairInfoActivity extends Activity {
                         }
                         break;
                     case R.id.flowlayout_disease:
-                        //map.put("diseaseHistory", str);//其他系统性疾病
+                        map.put("diseaseHistory", str);//其他系统性疾病
                         diseaseHistory = str;
                         if (str.contains("其他：")) {
                             et_system_disease.setVisibility(View.VISIBLE);
@@ -701,7 +701,7 @@ public class LoseHairInfoActivity extends Activity {
                         }
                         break;
                     case R.id.flowlayout_treatment_method:
-                        //map.put("treatmentHistory", str);//公立机构治疗方法
+                        map.put("treatmentHistory", str);//公立机构治疗方法
                         treatmentHistory = str;
                         if (str.contains("其他：")) {
                             et_1.setVisibility(View.VISIBLE);
@@ -910,12 +910,20 @@ public class LoseHairInfoActivity extends Activity {
         }
         if(et_1.getVisibility()== View.VISIBLE){
             if (!"".equals(treatmentHistory)){
-                map.put("treatmentHistory", et_1.getText().toString().trim()+","+treatmentHistory);//公立机构治疗方法
+                String s = et_1.getText().toString().trim() + "," + treatmentHistory;
+                if (s.contains(",其他：")){
+                    s=s.replace(",其他：", "");
+                }
+                map.put("treatmentHistory",s);//公立机构治疗方法
             }
         }
         if(et_system_disease.getVisibility()== View.VISIBLE){
             if (!"".equals(diseaseHistory)){
-                map.put("diseaseHistory", et_system_disease.getText().toString().trim()+","+diseaseHistory);//公立机构治疗方法
+                String s = et_system_disease.getText().toString().trim() + "," + diseaseHistory;
+                if (s.contains(",其他：")){
+                    s=s.replace(",其他：", "");
+                }
+                map.put("diseaseHistory",s);//公立机构治疗方法
             }
         }
         if(et_public_result.getVisibility()== View.VISIBLE){

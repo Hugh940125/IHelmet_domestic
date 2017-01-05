@@ -967,7 +967,7 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
             public void onResponse(ResultData<List<BindInfo>> response) {
                 if (response.getSuccess()){
                     List<BindInfo> data = response.getData();
-                    if (data != null){
+                    if (data.size()>0){
                         if (type == 1){
                             startActivity(new Intent(MainActivity.this,LoseHairInfoActivity.class));
                             finish();

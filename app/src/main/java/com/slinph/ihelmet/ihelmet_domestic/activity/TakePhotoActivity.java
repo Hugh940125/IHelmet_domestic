@@ -358,7 +358,7 @@ public class TakePhotoActivity extends Activity implements View.OnClickListener{
             @Override
             public void onError(int statusCode, Throwable error) {
                 alertDialog.dismiss();
-                Toast.makeText(TakePhotoActivity.this, "网络错误"+statusCode, Toast.LENGTH_SHORT).show();
+                Toast.makeText(TakePhotoActivity.this, "网络异常"+statusCode+"0x06", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -371,7 +371,7 @@ public class TakePhotoActivity extends Activity implements View.OnClickListener{
                                     @Override
                                     public void onError(int statusCode, Throwable error) {
                                         alertDialog.dismiss();
-                                        Toast.makeText(TakePhotoActivity.this, "网络错误"+statusCode, Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(TakePhotoActivity.this, "网络异常"+statusCode+"0x07", Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override

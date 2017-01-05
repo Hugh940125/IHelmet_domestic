@@ -9,7 +9,7 @@
     <string name="mall">Mall</string>
     <string name="mine">我的</string>
     <string name="next">下一步</string>
-    <string name="scanning">扫描设备···</string>
+    <string name="scanning">   扫描设备···</string>
     <string name="double_click_exit">再按一次退出程序</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -156,7 +156,7 @@
     <string name="scan_to_download">扫描此二维码下载APP</string>
     <string name="customer_service">联系客服</string>
     <string name="scan_to_service">扫描此二维码或添加微信号：slinph18138229194</string>
-    <string name="service_phone">咨询电话：400-801-8030转1</string>
+    <string name="service_phone">咨询电话：400–801–8030转1</string>
 
     <string-array name="hour_display">
         <item>0</item>
