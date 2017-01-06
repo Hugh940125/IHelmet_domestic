@@ -334,7 +334,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                         long currentTimeMillis = System.currentTimeMillis();
                                         Log.e("现在的毫秒数",currentTimeMillis + "");
                                         long timeDistence = currentTimeMillis - reportTime;
-                                        if (timeDistence >= 432000000L  && size < codeCount*5){//2592000000  3600000  432000000
+                                        if (size <codeCount*5){
+                                            StaticVariables.IS_CAN_FOLLOWUP = true;
+                                        }
+                                        if (timeDistence >= 23328000000L){
+                                            StaticVariables.TIME_DISTANCE_OK = true;
+                                        }
+                                        if ( timeDistence >= 23328000000L && timeDistence <= 23932800000L && size < codeCount*5){//一个月 2592000000 一小时 3600000 5天 432000000
                                             startActivity(new Intent(LoginActivity.this,FollowUpActivity.class));
                                             LoginActivity.this.finish();
                                         }else {

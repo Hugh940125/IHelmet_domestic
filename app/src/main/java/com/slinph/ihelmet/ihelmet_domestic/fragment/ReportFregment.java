@@ -3,6 +3,7 @@ package com.slinph.ihelmet.ihelmet_domestic.fragment;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
@@ -30,6 +31,7 @@ import android.widget.Toast;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.slinph.ihelmet.ihelmet_domestic.R;
+import com.slinph.ihelmet.ihelmet_domestic.activity.FollowUpActivity;
 import com.slinph.ihelmet.ihelmet_domestic.activity.ImagePagerActivity;
 import com.slinph.ihelmet.ihelmet_domestic.internet.Url;
 import com.slinph.ihelmet.ihelmet_domestic.internet.Vo.QualifiedVO;
@@ -104,6 +106,7 @@ public class ReportFregment extends Fragment {
     private File[] files;
     private AlertDialog alertDialog1;
     private AlertDialog alertDialog2;
+    private Button bt_want_followup;
 
 
     @Override
@@ -142,6 +145,35 @@ public class ReportFregment extends Fragment {
             ll_my_schedule = (LinearLayout) inflate.findViewById(R.id.ll_my_schedule);
             tv_expert_suggest = (TextView) inflate.findViewById(R.id.tv_hair_suggest);
             gv_photo = (NoScrollGridView) inflate.findViewById(R.id.gv_photo);
+            bt_want_followup = (Button) inflate.findViewById(R.id.bt_want_followup);
+            if (bt_want_followup != null){
+                bt_want_followup.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (StaticVariables.TIME_DISTANCE_OK && StaticVariables.IS_CAN_FOLLOWUP){
+                            startActivity(new Intent(mContext, FollowUpActivity.class));
+                        }else {
+                            String mes = "";
+                            if (!StaticVariables.TIME_DISTANCE_OK){
+                                mes = "还没到随诊时间，请耐心等待";
+                            }
+                            if (!StaticVariables.IS_CAN_FOLLOWUP){
+                                mes = "您的随诊服务已经用完";
+                            }
+                            AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+                            builder.setTitle("提示：")
+                                   .setMessage(mes)
+                                   .setPositiveButton("确认", new DialogInterface.OnClickListener() {
+                                       @Override
+                                       public void onClick(DialogInterface dialog, int which) {
+
+                                       }
+                                   })
+                                   .show();
+                        }
+                    }
+                });
+            }
         }
         return inflate;
     }

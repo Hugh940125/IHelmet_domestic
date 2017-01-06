@@ -12,6 +12,8 @@ import java.util.Set;
  */
 public class StaticVariables {
 
+    public static boolean IS_CAN_FOLLOWUP = false;
+    public static boolean TIME_DISTANCE_OK = false;
     public static int CHECK_TYPE = 0;
     public static long REGIS_TIME = -1L;
     public static boolean IS_QUALIFIDE_EXIST = false;

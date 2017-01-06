@@ -52,7 +52,9 @@ public abstract class BaseActivity extends AppCompatActivity {
 
         View child = LayoutInflater.from(this).inflate(addLayoutId(), null);//获取需要填充的view
         container = (FrameLayout) findViewById(R.id.ll_container);
-        container.addView(child);
+        if (container != null){
+            container.addView(child);
+        }
         findViews();
     }
 

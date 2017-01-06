@@ -44,7 +44,11 @@ public class BindSuccessActivity extends BaseActivity {
                 @Override
                 public void onClick(View view) {
                     BindSuccessActivity.this.finish();
-                    toAty(LoseHairInfoActivity.class);
+                    /*if (StaticVariables.IS_REPORT_EXIST){
+                        toAty(MainActivity.class);
+                    }else {*/
+                        toAty(LoseHairInfoActivity.class);
+                    //}
                 }
             });
         }
