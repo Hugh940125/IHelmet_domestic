@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.EquipmentInfoActivity">
+    tools:context="com.slinph.ihairhelmet4.activity.EquipmentInfoActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -30,37 +30,37 @@
             android:id="@+id/ib_deviceinfo_back"/>
     </FrameLayout>
 
-    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+    <com.slinph.ihairhelmet4.view.DeviceInfoItem
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Dii_number"
         DeviceInfoItem:ValueName="设备序列号"/>
 
-    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+    <com.slinph.ihairhelmet4.view.DeviceInfoItem
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Dii_hardware"
         DeviceInfoItem:ValueName="硬件版本"/>
 
-    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+    <com.slinph.ihairhelmet4.view.DeviceInfoItem
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Dii_software"
         DeviceInfoItem:ValueName="软件版本"/>
 
-<!--    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+<!--    <com.slinph.ihelmet.view.DeviceInfoItem
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Dii_bt_version"
         DeviceInfoItem:ValueName="蓝牙版本"/>-->
 
-    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+    <com.slinph.ihairhelmet4.view.DeviceInfoItem
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Dii_laser"
         DeviceInfoItem:ValueName="激光灯数量"/>
 
-    <com.slinph.ihelmet.ihelmet_domestic.view.DeviceInfoItem
+    <com.slinph.ihairhelmet4.view.DeviceInfoItem
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Dii_battery"

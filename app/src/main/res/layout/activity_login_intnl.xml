@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".activity.IntlLoginActivity">
+    tools:context="com.slinph.ihairhelmet4.activity.IntlLoginActivity">
 
 
     <ImageView

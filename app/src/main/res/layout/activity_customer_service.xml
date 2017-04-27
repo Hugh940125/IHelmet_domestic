@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.CustomerServiceActivity">
+    tools:context="com.slinph.ihairhelmet4.activity.CustomerServiceActivity">
 
     <FrameLayout
         android:layout_width="match_parent"

@@ -56,7 +56,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <com.slinph.ihairhelmet.widget.photoview.gridview.NoScrollGridView
+    <com.slinph.ihairhelmet4.view.NoScrollGridView
         android:id="@+id/gv_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

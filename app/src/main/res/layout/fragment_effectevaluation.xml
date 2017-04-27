@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/global_theme_bg"
     android:fillViewport="true"
-    tools:context="com.slinph.ihelmet.ihelmet_domestic.fragment.EvaluationFragment">
+    tools:context="com.slinph.ihairhelmet4.fragment.EvaluationFragment">
 
         <LinearLayout
             android:layout_width="match_parent"

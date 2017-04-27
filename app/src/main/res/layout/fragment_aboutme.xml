@@ -59,7 +59,7 @@
          android:layout_marginLeft="@dimen/margin10"
          android:layout_marginStart="@dimen/margin10"
          android:background="#DDDFE4"/>
-     <TextView
+<!--     <TextView
         android:id="@+id/aboutMe5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,14 +72,14 @@
         android:text="@string/user_guide"
         android:clickable="true"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        />
+        />-->
 
-    <View
+<!--    <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginLeft="@dimen/margin10"
         android:layout_marginStart="@dimen/margin10"
-        android:background="#DDDFE4"/>
+        android:background="#DDDFE4"/>-->
 
     <TextView
         android:id="@+id/aboutMe6"

@@ -113,5 +113,14 @@
         android:layout_marginBottom="60dp"
         android:textColor="@color/white"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/remind_tip"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textSize="10sp"
+        />
+
 
 </LinearLayout>

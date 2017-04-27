@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="horizontal"
     android:gravity="center_vertical"
-    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.CompareActivity">
+    tools:context="com.slinph.ihairhelmet4.activity.CompareActivity">
 
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/com1"

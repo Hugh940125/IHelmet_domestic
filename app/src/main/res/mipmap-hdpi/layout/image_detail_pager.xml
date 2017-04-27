@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.slinph.ihelmet.international.widget.photoview.gridview.HackyViewPager
+    <com.slinph.ihairhelmet4.view.HackyViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

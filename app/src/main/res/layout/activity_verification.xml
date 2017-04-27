@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.VerificationActivity">
+    android:id="@+id/code"
+    tools:context="com.slinph.ihairhelmet4.activity.VerificationActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -15,7 +16,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:text="@string/bind_helmet"
+            android:text="识别头盔"
+            android:id="@+id/tv_get_service"
             android:textSize="25sp"
             android:gravity="center"/>
 
@@ -37,7 +39,7 @@
         android:text="@string/scan_tip"
         android:id="@+id/tv_scan_tip"
         android:gravity="center"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         />

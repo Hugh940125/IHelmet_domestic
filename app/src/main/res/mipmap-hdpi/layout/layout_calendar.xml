@@ -2,8 +2,7 @@
               android:layout_width="320dp"
               android:layout_height="410dp"
               android:background="#EFEFEF"
-              android:orientation="vertical"
-    >
+              android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -61,7 +60,7 @@
             android:layout_width="fill_parent"
             android:layout_height="1px"
             android:layout_alignParentTop="true"
-            android:background="#20000000"></View>
+            android:background="#20000000"/>
 
         <TableLayout
             android:layout_width="fill_parent"
@@ -114,10 +113,10 @@
             android:layout_width="fill_parent"
             android:layout_height="1px"
             android:layout_alignParentTop="true"
-            android:background="#20000000"></View>
+            android:background="#20000000"/>
     </LinearLayout>
 
-    <com.slinph.ihelmet.international.widget.calendarview.CalendarView
+    <com.slinph.ihairhelmet4.view.CalendarView
         android:id="@+id/calendarView"
         android:layout_width="320dp"
         android:layout_height="250dp"

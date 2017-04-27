@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.ProtocolActivity">
+    tools:context="com.slinph.ihairhelmet4.activity.ProtocolActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"

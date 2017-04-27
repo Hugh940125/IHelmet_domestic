@@ -5,7 +5,7 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.FollowUpActivity"
+    tools:context="com.slinph.ihairhelmet4.activity.FollowUpActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto"
    >
 
@@ -65,7 +65,7 @@
             android:text="@string/oil_jianshao"
             android:textSize="15sp"/>
 
-        <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+        <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
             android:id="@+id/flowlayout_scalp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
             android:text="@string/touxie_jiaoshao"
             android:textSize="15sp"/>
 
-        <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+        <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
             android:id="@+id/flowlayout_dandruff"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
             android:text="@string/saoyang_jianqing"
             android:textSize="15sp"/>
 
-        <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+        <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
             android:id="@+id/flowlayout_scalp_itching"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
             android:text="@string/hongzhennongbao_jianshao"
             android:textSize="15sp"/>
 
-        <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+        <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
             android:id="@+id/flowlayout_loss_speed"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
             android:text="@string/loss_speed_compare"
             android:textSize="15sp"/>
 
-        <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+        <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
             android:id="@+id/flowlayout_treatment_newhair"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -201,7 +201,7 @@
             android:text="@string/is_cuzhuang"
             android:textSize="15sp"/>
 
-        <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+        <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
             android:id="@+id/flowlayout_treatment_cuzhuang"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -224,7 +224,7 @@
             android:text="@string/is_medicine"
             android:textSize="15sp"/>
 
-        <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+        <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
             android:id="@+id/flowlayout_treatment_medicine"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -232,7 +232,7 @@
             app:max_select="1" />
     </LinearLayout>
 
-    <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+    <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
         android:id="@+id/flowlayout_treatment_effect"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

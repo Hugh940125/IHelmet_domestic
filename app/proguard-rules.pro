@@ -18,3 +18,30 @@
 
 -keepattributes InnerClasses
 -dontoptimize
+
+#-keep class com.junkchen.blelib.** { *; }
+#-keep class cn.aigestudio.datepicker.** { *; }
+#-keep class com.shizhefei.** { *; }
+#-keep class com.uuzuche.lib_zxing.** { *; }
+#-keep class cn.carbswang.android.numberpickerview.library.** { *; }
+
+#信鸽推送
+-keep class com.tencent.android.tpush.**  {* ;}
+-keep class com.tencent.mid.**  {* ;}
+
+#引用了v4或者v7包
+-dontwarn android.support.**
+
+############混淆保护自己项目的部分代码以及引用的第三方jar包library-end##################
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+    public void set*(...);
+}
+
+-keep class HttpUtils;
+-keep class jacksonUtils;
+-keep class NetUtils;
+-keep class ObjToMap;
+-keep class ResultData;

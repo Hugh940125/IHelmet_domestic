@@ -54,7 +54,7 @@
             android:text="脱发多久了"
             android:textSize="@dimen/font_middle" />
 
-        <com.slinph.ihelmet.ihelmet_domestic.view.MonthProgressBar
+        <com.slinph.ihairhelmet4.view.MonthProgressBar
             android:id="@+id/slider_time"
             style="@style/MonthProgressBar_Twinkle_Night"
             android:layout_width="match_parent"
@@ -99,12 +99,12 @@
                 android:text="有无家族遗传脱发史（多选）"
                 android:textSize="@dimen/font_middle" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_is_relative"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 app:max_select="1" />
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_relative"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
                 android:layout_centerVertical="true"
                 android:text="头油" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_scalp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -158,7 +158,7 @@
                 android:layout_centerVertical="true"
                 android:text="头屑" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_dandruff"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -183,7 +183,7 @@
                 android:layout_centerVertical="true"
                 android:text="头皮有无红疹" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_scalp_rash"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -208,7 +208,7 @@
                 android:layout_centerVertical="true"
                 android:text="头皮是否瘙痒" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_scalp_itching"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -233,7 +233,7 @@
                 android:layout_centerVertical="true"
                 android:text="头皮有无脓包" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_scalp_pustule"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -267,7 +267,7 @@
                 android:layout_centerVertical="true"
                 android:text="头发直径" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_hair_dia"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -292,7 +292,7 @@
                 android:layout_centerVertical="true"
                 android:text="白发情况" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_white_hair"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -317,7 +317,7 @@
                 android:layout_centerVertical="true"
                 android:text="头发弹性" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_hair_elasticity"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -343,7 +343,7 @@
                 android:layout_centerVertical="true"
                 android:text="每日掉发量" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_hair_loss_one_day_number"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -368,7 +368,7 @@
                 android:layout_marginTop="10dp"
                 android:text="轻拉毛实验" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_light_nap_experiment"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -408,7 +408,7 @@
                 android:text="您感觉头发量相比脱发前减少了"
                 android:textSize="@dimen/font_normal" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_quantity"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -432,7 +432,7 @@
                 android:text="您感觉目前的脱发速度较以前"
                 android:textSize="@dimen/font_normal" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_speed"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -590,12 +590,12 @@
                 android:text="有无其他系统性疾病（多选）"
                 android:textSize="@dimen/font_normal" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_is_disease"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 app:max_select="1" />
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_disease"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -634,7 +634,7 @@
                 android:layout_centerVertical="true"
                 android:text="习惯的入睡时间" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_time_asleep"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -659,7 +659,7 @@
                 android:layout_centerVertical="true"
                 android:text="睡眠质量" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_sleep_quality"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -684,7 +684,7 @@
                 android:layout_centerVertical="true"
                 android:text="是否嗜好辛辣，油炸食物" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_food_hobby"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -709,7 +709,7 @@
                 android:layout_centerVertical="true"
                 android:text="是否感觉生活/工作压力大" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_lives_or_job_stress"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -734,7 +734,7 @@
                 android:layout_centerVertical="true"
                 android:text="是否吸烟" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_if_smoke"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -757,7 +757,7 @@
                 android:layout_centerVertical="true"
                 android:text="吸烟量" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_smoke_quality"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -782,7 +782,7 @@
                 android:layout_centerVertical="true"
                 android:text="是否嗜酒" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_if_sot"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -812,7 +812,7 @@
                 android:layout_centerVertical="true"
                 android:text="婚育状况" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_marital_condition"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -837,7 +837,7 @@
                 android:layout_centerVertical="true"
                 android:text="近期是否有生育计划" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_marital_plan"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -870,7 +870,7 @@
                 android:layout_height="wrap_content"
                 android:text="以前是否在公立医疗机构寻求过治疗" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_public_treatment"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
@@ -889,7 +889,7 @@
                     android:layout_height="wrap_content"
                     android:text="诊断的结果为：" />
 
-                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                     android:id="@+id/flowlayout_treatment_result"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -910,7 +910,7 @@
                     android:layout_height="wrap_content"
                     android:text="治疗的方法为：" />
 
-                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                     android:id="@+id/flowlayout_treatment_method"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -929,7 +929,7 @@
                     android:layout_height="wrap_content"
                     android:text="治疗的效果" />
 
-                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                     android:id="@+id/flowlayout_treatment_effect"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -954,7 +954,7 @@
                 android:layout_height="wrap_content"
                 android:text="是否在社会机构寻求过治疗" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_socio_treatment"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -973,7 +973,7 @@
                     android:layout_height="wrap_content"
                     android:text="社会机构治疗历史" />
 
-                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                     android:id="@+id/flowlayout_socio_text"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -985,7 +985,7 @@
                     android:layout_height="wrap_content"
                     android:text="治疗效果" />
 
-                <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+                <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                     android:id="@+id/flowlayout_socio_treatment_effect"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -1019,7 +1019,7 @@
                 android:layout_height="wrap_content"
                 android:text="脱发导致以下哪些心理问题，并影响生活质量" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_psychology_problem"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -1045,7 +1045,7 @@
                 android:layout_height="wrap_content"
                 android:text="最关心治疗中的哪些问题" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_concern_problem"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -1089,7 +1089,7 @@
                 android:layout_height="wrap_content"
                 android:text="您是否为以下职业（与病情及治疗方案有关）" />
 
-            <com.slinph.ihelmet.ihelmet_domestic.view.flowlayout.TagFlowLayout
+            <com.slinph.ihairhelmet4.view.flowlayout.TagFlowLayout
                 android:id="@+id/flowlayout_occupation"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

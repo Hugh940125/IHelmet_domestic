@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.slinph.ihelmet.international.widget.MultiStateView
+<com.slinph.ihairhelmet4.view.MultiStateView
     android:id="@+id/multiStateView"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -25,4 +25,4 @@
             android:dividerHeight="5dp"/>
 
     </com.slinph.ihelmet.international.widget.swiperefreshlayout.SwipeRefreshLayout>
-</com.slinph.ihelmet.international.widget.MultiStateView>
+</com.slinph.ihairhelmet4.view.MultiStateView>

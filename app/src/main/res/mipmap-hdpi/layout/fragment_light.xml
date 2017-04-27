@@ -15,11 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="55dp"
         android:gravity="center_vertical"
-        android:text="Equipment is not connected"
+        android:text="connected"
         android:textSize="22sp"
         />
 
-    <com.slinph.ihelmet.international.widget.XCArcProgressBar
+    <com.slinph.ihairhelmet4.view.XCArcProgressBar
         android:id="@+id/arcProgressBar_progress"
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -145,7 +145,7 @@
         android:orientation="horizontal"
         >
 
-        <com.slinph.ihelmet.international.widget.NumberProgressBar
+        <com.slinph.ihairhelmet4.view.NumberProgressBar
             android:id="@+id/numberbar1"
             style="@style/NumberProgressBar_Twinkle_Night"
             android:layout_width="0dp"

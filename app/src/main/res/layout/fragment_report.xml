@@ -93,7 +93,7 @@
                     android:gravity="center"
                     android:layout_above="@id/gv_classification"/>
 
-                <com.slinph.ihelmet.ihelmet_domestic.view.NoScrollGridView
+                <com.slinph.ihairhelmet4.view.NoScrollGridView
                     android:id="@+id/gv_classification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
         </LinearLayout>
 
         <!-- 下面是四张最新上传的图片 -->
-        <com.slinph.ihelmet.ihelmet_domestic.view.NoScrollGridView
+        <com.slinph.ihairhelmet4.view.NoScrollGridView
             android:id="@+id/gv_photo"
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"
@@ -201,6 +201,7 @@
         </LinearLayout>
 
         <Button
+            android:textColor="@android:color/white"
             android:background="@mipmap/bt_followup"
             android:layout_marginTop="10dp"
             android:text="我要随诊"

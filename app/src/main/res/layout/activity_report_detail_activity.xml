@@ -118,7 +118,7 @@
             <!--android:layout_marginTop="35dp"-->
             <!--android:scaleType="centerInside"-->
             <!--/>-->
-            <com.slinph.ihelmet.ihelmet_domestic.view.NoScrollGridView
+            <com.slinph.ihairhelmet4.view.NoScrollGridView
                 android:id="@+id/gv_classification"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -131,7 +131,7 @@
         </LinearLayout>
 
         <!-- 下面是四张最新上传的图片 -->
-        <com.slinph.ihelmet.ihelmet_domestic.view.NoScrollGridView
+        <com.slinph.ihairhelmet4.view.NoScrollGridView
             android:id="@+id/gv_photo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

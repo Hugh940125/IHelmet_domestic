@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.QuestionDeteilActivity">
+    tools:context="com.slinph.ihairhelmet4.activity.QuestionDeteilActivity">
 
     <FrameLayout
         android:layout_width="match_parent"

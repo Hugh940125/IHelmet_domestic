@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.slinph.ihelmet.ihelmet_domestic.activity.ProtocolActivity"
+    tools:context="com.slinph.ihairhelmet4.activity.ProtocolActivity"
     tools:showIn="@layout/activity_protocol">
 
     <TextView

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.slinph.ihelmet.ihelmet_domestic"
+<manifest package="com.slinph.ihairhelmet4"
           xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools">
 
@@ -37,7 +37,7 @@
     <uses-permission android:name="android.permission.BATTERY_STATS"/>
 
     <application
-        android:name=".application.MyApplication"
+        android:name="com.slinph.ihairhelmet4.application.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/remind_logo"
         android:label="@string/app_name"
@@ -72,7 +72,6 @@
             android:name="com.tencent.android.tpush.XGPushActivity"
             android:exported="false">
             <intent-filter>
-
                 <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
                 <action android:name="android.intent.action"/>
             </intent-filter>
@@ -90,7 +89,7 @@
             android:name="com.tencent.android.tpush.rpc.XGRemoteService"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.slinph.ihelmet.ihelmet_domestic.PUSH_ACTION"/>
+                <action android:name="com.slinph.ihairhelmet4.PUSH_ACTION"/>
             </intent-filter>
         </service>
 
@@ -127,14 +126,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.slinph.ihairhelmet4.activity.MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.TakePhotoActivity"
+            android:name="com.slinph.ihairhelmet4.activity.TakePhotoActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.WelcomeActivity"
+            android:name="com.slinph.ihairhelmet4.activity.WelcomeActivity"
             android:icon="@drawable/remind_logo"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -145,89 +144,89 @@
         </activity>
 
         <service
-            android:name=".service.remindservice"
+            android:name="com.slinph.ihairhelmet4.service.remindservice"
             android:priority="1000"/>
 
         <receiver
-            android:name=".service.AlarmReceiver"
+            android:name="com.slinph.ihairhelmet4.service.AlarmReceiver"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name=".activity.CompareActivity"
+            android:name="com.slinph.ihairhelmet4.activity.CompareActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.ImageZoomActivity"
+            android:name="com.slinph.ihairhelmet4.activity.ImageZoomActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.ScanActivity"
+            android:name="com.slinph.ihairhelmet4.activity.ScanActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name="com.slinph.ihairhelmet4.activity.RegisterActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.IntlLoginActivity"
+            android:name="com.slinph.ihairhelmet4.activity.IntlLoginActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.slinph.ihairhelmet4.activity.LoginActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.LoseHairInfoActivity"
+            android:name="com.slinph.ihairhelmet4.activity.LoseHairInfoActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.ChangePasswordActivity"
+            android:name="com.slinph.ihairhelmet4.activity.ChangePasswordActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.ChangeUserInfoActivity"
+            android:name="com.slinph.ihairhelmet4.activity.ChangeUserInfoActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.ImagePagerActivity"
+            android:name="com.slinph.ihairhelmet4.activity.ImagePagerActivity"
             android:screenOrientation="portrait"/>
 
-        <receiver android:name=".service.NetStateReceiver">
+        <receiver android:name="com.slinph.ihairhelmet4.service.NetStateReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
             </intent-filter>
         </receiver>
 
         <activity
-            android:name=".activity.AllReportsActivity"
+            android:name="com.slinph.ihairhelmet4.activity.AllReportsActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.ReportDetailActivity"
+            android:name="com.slinph.ihairhelmet4.activity.ReportDetailActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.FollowUpActivity"
+            android:name="com.slinph.ihairhelmet4.activity.FollowUpActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activity.EquipmentInfoActivity"
+            android:name="com.slinph.ihairhelmet4.activity.EquipmentInfoActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activity.VerificationActivity"
+            android:name="com.slinph.ihairhelmet4.activity.VerificationActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activity.ScanSuccessActivity"
+            android:name="com.slinph.ihairhelmet4.activity.ScanSuccessActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activity.BindSuccessActivity"
+            android:name="com.slinph.ihairhelmet4.activity.BindSuccessActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activity.DownloadShareActivity"
+            android:name="com.slinph.ihairhelmet4.activity.DownloadShareActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activity.CustomerServiceActivity"
+            android:name="com.slinph.ihairhelmet4.activity.CustomerServiceActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".activity.ProtocolActivity"
+            android:name="com.slinph.ihairhelmet4.activity.ProtocolActivity"
             android:label="@string/title_activity_protocol"
             android:theme="@style/AppTheme">
         </activity>
-        <activity android:name=".activity.QuestionDeteilActivity"
+        <activity android:name="com.slinph.ihairhelmet4.activity.QuestionDeteilActivity"
                   android:screenOrientation="portrait">
         </activity>
     </application>
